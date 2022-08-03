@@ -8,9 +8,6 @@ export default function Navbar() {
                 <div class="link">
                     <ul>
                         <li>
-                            <a href="#" className="nav-link">Acceuil</a>
-                        </li>
-                        <li>
                             <a href="#" className="nav-link">Article</a>
                         </li>
                         <li>
