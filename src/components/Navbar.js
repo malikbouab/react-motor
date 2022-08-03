@@ -11,9 +11,6 @@ export default function Navbar() {
                             <a href="#" className="nav-link">Article</a>
                         </li>
                         <li>
-                            <a href="#" className="nav-link">A propos </a>
-                        </li>
-                        <li>
                             <a href="#" className="nav-link">Contact</a>
                         </li>
                     </ul>
