@@ -1,9 +1,10 @@
 import React from 'react';
-import Navbar from "./components/Navbar";
+import { Navbar } from "./components/Navbar";
 import Main from "./components/Main";
+import { Button } from './components/Button';
 
 
-const App = () => {
+export const App = () => {
   return (
     <div className="App">
       <Navbar />
@@ -11,5 +12,3 @@ const App = () => {
     </div>
   );
 };
-
-export default App;
