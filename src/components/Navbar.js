@@ -12,7 +12,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <header>
+    <Header>
       <Nav>
         <a href="#" className="logo">
           Cyl<span>exx</span>
@@ -40,13 +40,31 @@ export const Navbar = () => {
               </Link>
             </li>
           </LinkUl>
-          <i className="uil uil-moon toggle-btn"></i>
         </LinkContainer>
       </Nav>
-    </header>
+    </Header>
   );
 };
 
+const Header = styled("header")`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 0.3s;
+  &.scrolled{
+    background-color: var(--bg-color-trsprt);
+    box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+  }
+`
+/** 
+const Headerscoll = styled(Header)`
+  background-color: var(--bg-color-trsprt);
+    box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+`*/
 const Nav = styled("nav")`
   position: relative;
   width: 100%;
@@ -97,7 +115,7 @@ const Link = styled("a")`
   }
 
   :hover {
-    color: var(--heading-color);
+    color: white;
   }
 
   :hover::after {

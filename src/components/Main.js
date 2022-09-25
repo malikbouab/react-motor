@@ -55,6 +55,7 @@ const Showcasearea = styled("section")`
 	padding: 120px 0;
 	width: 100%;
 	overflow: hidden;
+  background-color: black;
 `
 const Showfarea = styled(Subheading)`
 			margin-bottom: 0.7rem;
